@@ -1,41 +1,57 @@
+body {
+    font-weight: 350;
+    font-size: 1.65rem;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    padding: 0;
+}
+
 .background {
     background-color: black;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: 0;
     background-color: #ffff;
-    height: 70vh;
-    border:10px solid #2d2d2d;
+    border:20px solid #2d2d2d;
     min-width: 680px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
 }
 
-body {
-    font-weight: 350;
-    font-size: 1.65rem;
-    font-family: "Poppins", sans-serif;
-    background-color: black;
-}
 
 .header{
     width: 90vw;
+    min-width: 85%;
 
 }
+
+.center-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .title {
     text-align: center;
     letter-spacing: -.02em;
     color: #2d2d2d;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 .title h1{
     display: block;
     text-transform: uppercase;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     line-height: .45;
 
 }
@@ -45,7 +61,7 @@ div.container.header{
 }
 
 .profile-pic {
-    width: 475px;
+    width: 70%;
     height: 525px;
     border: 1.25rem solid #4e4e4f;
     background-size: cover;
@@ -56,16 +72,19 @@ div.container.header{
     filter: grayscale(95%);
     position: relative;
     bottom: 0rem;
-    min-width: 515px;
-    min-height: 465px;
+    padding-bottom: 0rem ;   
+    min-height: 85%;
+    max-width: 600px;
+    max-height: 600px;
     
    
 }
 .profile {
     flex-direction: column;
     width: 0.5rem;
-    padding-bottom: 150px;
-    min-height: 600px;
+    padding-bottom: 10px;
+    min-height: 75%;
+    min-width: 75%;
 }
 body > .main-container {
     display: flex;
@@ -95,12 +114,12 @@ section.container{
 }
 
 .footer {
-    margin-top: 250px;
+    margin-top: 125px;
     color: #ffff;
     font-size: 1rem;
     min-height: 40px;
-    min-height: 10vh;
     border-top: 25px;
+    align-self: center;
 }
 
 footer.footer {
@@ -146,12 +165,16 @@ footer.footer {
 }
 .copyright {
     min-width: auto;
-    flex-basis: 500px;
+    flex-basis: 200px;
     align-self: center;
+    justify-self: center;
 
 }
 .list-socials {
     list-style-type: none;
+    flex-basis: 250px;
+    margin: 0;
+    min-width: 250px;
 }
 .socials {
     color: #2d2d2d;
@@ -163,3 +186,137 @@ a, a:hover, a:visited, a:active {
     color: inherit;
     text-decoration: none;
 }
+
+.foot-logos {
+    text-align: left;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    body {
+      font-size: 2rem;
+    }
+  
+    .header {
+        width: 90%;
+    }
+
+    .header.title h1 {
+      font-size: 4rem;
+    }
+  
+    .bio-text {
+      font-size: 1.5rem;
+    }
+  
+    /* Example: Adjust layout */
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-bottom: 20px;
+    }
+  
+    .list-socials {
+      text-align: center;
+    }
+  
+    .list-socials {
+        text-align: center;
+        height: 40px;
+      }
+    
+      .list-socials li {
+        margin-right: 10px;
+      }
+      .foot-logos {
+          align-self: center;
+  
+      }
+      footer.footer {
+        justify-content: center;    
+        font-size: 14px;
+        padding-bottom: 70px;
+        height: auto;
+        
+      }
+  }
+
+  @media only screen and (max-width: 520px) {
+    /* Adjustments for smaller screens */
+    .container {
+        min-width: 400px;
+        position: relative;
+    }
+
+
+    div.container.header{
+        min-width: 400px;
+        min-height: 615px;
+
+       }
+
+    .footer {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .header.title {
+        width: auto;
+        align-items: center;
+    }
+
+    .header.title h1 {
+      font-size: 4rem;
+      padding-left: 5%;
+      padding-right: 10px;
+    }
+
+
+    
+    /* Example: Adjust layout */
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 70%;
+    }
+  
+    .profile-pic {
+      margin-bottom: 20px;
+      max-height: 400px;
+      width: 92%;
+    }
+  
+    .footer {
+        min-width: auto;
+        min-height: auto;
+    }
+    .list-socials {
+      text-align: center;
+      height: 40px;
+    }
+  
+    .list-socials li {
+      margin-right: 10px;
+    }
+    .foot-logos {
+        align-self: center;
+
+    }
+    footer.footer {
+      justify-content: center;    
+      font-size: 14px;
+
+      padding-bottom: 0;
+    }
+    .copyright {
+        display:flex;
+        flex-shrink: 0;
+    }
+  }

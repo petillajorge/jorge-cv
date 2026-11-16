@@ -223,6 +223,42 @@ a:focus-visible {
   text-decoration-color: var(--accent);
 }
 
+.theme-pixel-btn {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  background-color: var(--surface);
+  border: 2px solid var(--text-primary);
+  box-shadow: 2px 2px 0 var(--text-primary);
+  cursor: pointer;
+  vertical-align: middle;
+  image-rendering: pixelated;
+}
+
+.theme-pixel-btn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent);
+}
+
+.theme-pixel-btn:hover,
+.theme-pixel-btn:focus-visible {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--text-primary);
+  outline: none;
+}
+
+.theme-pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
 .cv-summary {
   font-size: 0.92rem;
   color: var(--text-muted);

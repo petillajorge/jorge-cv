@@ -430,6 +430,19 @@ a:focus-visible {
   margin-bottom: 0.15rem;
 }
 
+.pub-title a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 3px;
+}
+
+.pub-title a:hover,
+.pub-title a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
 .pub-index {
   font-family: var(--font-mono);
   font-size: 0.78rem;

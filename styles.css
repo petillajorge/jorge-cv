@@ -5,24 +5,15 @@
    ========================================================================== */
 
 :root {
-  /* DEFAULT PRESET: Pure Monochrome Light */
-  --bg: #FAFAFA;
-  --surface: #F2F2F2;
-  --text-primary: #111111;
-  --text-muted: #666666;
-  --border: #E5E5E5;
-  --accent: #111111;
-
-  /* ALTERNATIVE PRESET 1: Warm Archival Paper (uncomment to set as default)
+  /* DEFAULT PRESET: Warm Archival Paper (Light) */
   --bg: #F6F4F0;
   --surface: #EDEAE2;
   --text-primary: #1C1B18;
   --text-muted: #65625A;
   --border: #DCD7CD;
   --accent: #1C1B18;
-  */
 
-  /* ALTERNATIVE PRESET 2: Dark Terminal Ink (uncomment to set as default)
+  /* ALTERNATIVE PRESET 1: Dark Terminal Ink (uncomment to set as default)
   --bg: #111214;
   --surface: #1A1C1F;
   --text-primary: #ECECEC;
@@ -31,13 +22,22 @@
   --accent: #ECECEC;
   */
 
-  /* ALTERNATIVE PRESET 3: Classic E-Ink (uncomment to set as default)
-  --bg: #EDEDEB;
-  --surface: #E2E2DF;
-  --text-primary: #141413;
-  --text-muted: #575753;
-  --border: #C9C9C4;
-  --accent: #141413;
+  /* ALTERNATIVE PRESET 2: Retro Amber CRT — DEC VT220 (uncomment to set as default)
+  --bg: #18120B;
+  --surface: #261C10;
+  --text-primary: #FFB000;
+  --text-muted: #C28218;
+  --border: #3D2B14;
+  --accent: #FFC94D;
+  */
+
+  /* ALTERNATIVE PRESET 3: Retro Dot-Matrix LCD — DMG-01 Olive (uncomment to set as default)
+  --bg: #D7E0C5;
+  --surface: #C7D4B2;
+  --text-primary: #1A2E1A;
+  --text-muted: #4B6348;
+  --border: #AEBE98;
+  --accent: #0F1F0F;
   */
 
   /* Typography & Layout Tokens */
@@ -47,15 +47,6 @@
 }
 
 /* Optional runtime theme attributes (matches the :root presets above) */
-html[data-theme="paper"] {
-  --bg: #F6F4F0;
-  --surface: #EDEAE2;
-  --text-primary: #1C1B18;
-  --text-muted: #65625A;
-  --border: #DCD7CD;
-  --accent: #1C1B18;
-}
-
 html[data-theme="dark"] {
   --bg: #111214;
   --surface: #1A1C1F;
@@ -65,13 +56,22 @@ html[data-theme="dark"] {
   --accent: #ECECEC;
 }
 
-html[data-theme="eink"] {
-  --bg: #EDEDEB;
-  --surface: #E2E2DF;
-  --text-primary: #141413;
-  --text-muted: #575753;
-  --border: #C9C9C4;
-  --accent: #141413;
+html[data-theme="amber"] {
+  --bg: #18120B;
+  --surface: #261C10;
+  --text-primary: #FFB000;
+  --text-muted: #C28218;
+  --border: #3D2B14;
+  --accent: #FFC94D;
+}
+
+html[data-theme="lcd"] {
+  --bg: #D7E0C5;
+  --surface: #C7D4B2;
+  --text-primary: #1A2E1A;
+  --text-muted: #4B6348;
+  --border: #AEBE98;
+  --accent: #0F1F0F;
 }
 
 /* ==========================================================================
